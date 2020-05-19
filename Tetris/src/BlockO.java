@@ -3,20 +3,22 @@ import java.util.ArrayList;
 
 public class BlockO extends Block{
 
-	private int rotation = 0;
+
 	ArrayList<Cell> shape = new ArrayList<Cell>();
 
     public BlockO(Cell cLoc) {
     	this.cLoc = cLoc;
         this.loc.add(cLoc);
         this.shapeType = 'O';
+        this.rotation = 0;
         genShape();
-        this.colour = Color.BLUE;
+        this.colour = Color.YELLOW;
     }
     
-    public void rotation() {
-    	rotation++;
-    	if(rotation > 3) rotation = 0;
-    }
+//    public void rotation() {
+//    	rotation++;
+//    	System.out.println(rotation);
+//    	if(rotation > 3) rotation = 0;
+//    }
 
 }
